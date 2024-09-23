@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        td:hover{
+            background-color: rgb(216, 112, 147);
+        }
+
+        tr.linha{
+            background-color: lightcoral;
+        }
+
+        .linha2{
+            background-color: lightblue;
+        }
+
+        .linha3{
+            background-color: aquamarine;
+        }
+
+        .linha4{
+            background-color: lightgoldenrodyellow;
+        }
+
+        .numero{
+            text-align: center; /* Alinhamento horizontal */
+            vertical-align: bottom; /* Alinhamento vertical */
+        }
+
+        .numero2{
+            text-align: center;
+            vertical-align: bottom;
+        }
+
+        .numero3{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <table>
+        <tr class="linha">
+            <td class="numero">A1</td>
+            <td class="numero2">B2</td>
+            <td class="numero3">C3</td>
+        </tr>
+        <tr class="linha2">
+            <td class="numero">A2</td>
+            <td class="numero2">B2</td>
+            <td>C2</td>
+        </tr>
+        <tr class="linha3">
+            <td class="numero">A3</td>
+            <td class="numero2">B3</td>
+            <td>C3</td>
+        </tr>
+        <tr class="linha4">
+            <td class="numero">A4</td>
+            <td class="numero2">B4</td>
+            <td>C4</td>
+        </tr>
+        <tr class="linha">
+            <td class="numero">A5</td>
+            <td class="numero2">B5</td>
+            <td>C5</td>
+        </tr>
+        <tr class="linha2">
+            <td class="numero">A6</td>
+            <td class="numero2">B6</td>
+        </tr>
+        <tr class="linha3">
+            <td class="numero">A7</td>
+        </tr>
+    </table>
+</body>
+</html>
