@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-image: linear-gradient(120deg, white, lightblue, rgb(27, 87, 177));
+            background-attachment: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            padding: 5px;
+        }
+
+        form{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(26, 155, 206, 0.5);
+            border: 1px solid rgba(0, 0, 0, 0.25);
+            border-top: 1px solid rgba(255, 255, 255, 0.8);
+            border-left: 1px solid rgba(255, 255, 255, 0.8);
+            box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.25);
+            width: 350px;
+            height: 350px;
+            text-align: center;
+        }
+
+        p{
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="off">
+        <h1>Formulário</h1>
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required placeholder="Nome completo" maxlength="30">
+        </p>
+
+        <p>
+            <label for="inum">Nota:</label>
+            <input type="number" name="numero" id="inum" required placeholder="0 a 10" step="0.5" max="10">
+        </p>
+
+        <p>
+            <label for="imonth">Mês:</label>
+            <input type="month" name="mes" id="imonth" value="2024-09" required>
+        </p>
+
+        <p>
+            <label for="idate">Data</label>
+            <input type="date" name="data" id="idate" value="2024-09-27" required>
+        </p>
+
+        <p>
+            <label for="ihour">Horário:</label>
+            <input type="time" name="hour" id="ihour" value="21:00" required>
+        </p>
+
+        <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
